@@ -2,8 +2,19 @@
 
 Mini library for work with Soundcloud API.
 
+## Instalation
+
+With [Composer](https://getcomposer.org/):
+```bash
+composer require aethletic/soundcloud
+```
+
+You can also [download latest release](https://github.com/aethletic/soundcloud/releases) without Composer and iclude like `require __DIR__ . '/soundcloud/src/Api.php'`.
+
+
 ## Documentation
 See Soundcloud API documentation [here](https://developers.soundcloud.com/docs/api/reference).
+
 
 ## Examples
 
