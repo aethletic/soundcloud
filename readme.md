@@ -9,7 +9,10 @@ With [Composer](https://getcomposer.org/):
 composer require aethletic/soundcloud
 ```
 
-You can also [download latest release](https://github.com/aethletic/soundcloud/releases) without Composer and iclude like `require __DIR__ . '/soundcloud/src/Api.php'`.
+You can also [download latest release](https://github.com/aethletic/soundcloud/releases) without Composer and include like:
+```php 
+require __DIR__ . '/soundcloud/src/Api.php';
+```
 
 
 ## Documentation
