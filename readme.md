@@ -21,7 +21,7 @@ See Soundcloud API documentation [here](https://developers.soundcloud.com/docs/a
 
 ## Examples
 
-Init
+**Init:**
 ```php
 <?php 
 
@@ -32,33 +32,36 @@ require __DIR__ . '/vendor/autoload.php';
 $sc = new Api('YOUR_CLIENT_ID_HERE');
 ```
 
-Inversal Soundcloud Api call
+**Iniversal Soundcloud Api call:**
 ```php
 $response = $sc->api(['resolve'], [
     'url' => 'https://soundcloud.com/uvulauvula/sets/snova-vozvrashchayus-domoy-f-pasosh',
 ]);
 ```
 
-Get Track ID
+**Get Track ID:**
 ```php
 $trackId = $sc->getTrackId('https://soundcloud.com/molchat-doma/discoteque');
 $streams = $sc->getStreamByTrackId($trackId);
 ```
 
-Get stream links (mp3, hls)
+**Get stream links (mp3, hls):**
 ```php
 $streams = $sc->getStreamByTrackUrl('https://soundcloud.com/pureflavoor/skriptonit-polozhenie-pureflavor-remix');
 ```
 
-Get playlist 
+**Get playlist:**
 ```php
 $playlist = $sc->getPlaylist('https://soundcloud.com/uvulauvula/sets/snova-vozvrashchayus-domoy-f-pasosh');
+```
 
-$m3u = $sc->playlistToM3U($rs);
+**Create M3U playlist:**
+```
+$m3u = $sc->playlistToM3U($playlist);
 file_put_contents(__DIR__.'/play.m3u', $m3u);
 ```
 
-Output file play.m3u
+**Output file play.m3u:**
 ```m3u
 #EXTM3U
 
