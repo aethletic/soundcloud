@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Soundcloud;
 
@@ -102,7 +102,7 @@ class Api
     {
         $response = file_get_contents(
             self::API_URL .  implode('/', $methods) . '/?' . http_build_query(array_merge(
-                $params, 
+                $params,
                 ['client_id' => $this->clientId]
             ))
         );
@@ -134,6 +134,6 @@ class Api
 
         $list = array_filter($list);
 
-        return count($list) > 0 ? "#EXTM3U\n\n" . implode("\n\n", ) : false;
+        return count($list) > 0 ? "#EXTM3U\n\n" . implode("\n\n", $list) : false;
     }
 }
