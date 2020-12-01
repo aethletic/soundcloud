@@ -56,7 +56,7 @@ $playlist = $sc->getPlaylist('https://soundcloud.com/uvulauvula/sets/snova-vozvr
 ```
 
 **Create M3U playlist:**
-```
+```php
 $m3u = $sc->playlistToM3U($playlist);
 file_put_contents(__DIR__.'/play.m3u', $m3u);
 ```
