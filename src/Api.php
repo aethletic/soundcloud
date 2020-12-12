@@ -13,7 +13,7 @@ class Api
     public function __construct($clientId = null)
     {
         if (!$clientId) {
-            new Exception('Please, pass your `client_id` to Client constructor as first argument.');
+            throw new Exception('Please, pass your `client_id` to Client constructor as first argument.');
         }
 
         $this->clientId = $clientId;
