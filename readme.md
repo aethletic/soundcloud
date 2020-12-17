@@ -1,4 +1,4 @@
-# WIP: ☁ Soundcloud Api Library 
+# ☁ Soundcloud PHP Api Library 
 
 Mini library for work with Soundcloud API.
 
