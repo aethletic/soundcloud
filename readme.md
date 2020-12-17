@@ -48,12 +48,13 @@ $response = $sc->api(['tracks'], [
 **Get Track ID:**
 ```php
 $trackId = $sc->getTrackId('https://soundcloud.com/molchat-doma/discoteque');
-$streams = $sc->getStreamByTrackId($trackId);
 ```
 
 **Get stream links (mp3, hls):**
 ```php
+$trackId = $sc->getTrackId('https://soundcloud.com/pureflavoor/skriptonit-polozhenie-pureflavor-remix');
 $streams = $sc->api(['i1', 'tracks', $trackId, 'streams']);
+
 // or you can use short alias for this:
 $streams = $sc->getStreamByTrackUrl('https://soundcloud.com/pureflavoor/skriptonit-polozhenie-pureflavor-remix');
 ```
