@@ -38,6 +38,12 @@ $response = $sc->api(['resolve'], [
     'url' => 'https://soundcloud.com/uvulauvula/sets/snova-vozvrashchayus-domoy-f-pasosh',
 ]);
 ```
+**Search tracks:**
+```php
+$response = $sc->api(['tracks'], [
+    'q' => 'платина бандана',
+]);
+```
 
 **Get Track ID:**
 ```php
