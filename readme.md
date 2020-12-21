@@ -66,11 +66,12 @@ $playlist = $sc->getPlaylist('https://soundcloud.com/uvulauvula/sets/snova-vozvr
 
 **Create M3U playlist:**
 ```php
+$playlist = $sc->getPlaylist('https://soundcloud.com/uvulauvula/sets/snova-vozvrashchayus-domoy-f-pasosh');
 $m3u = $sc->playlistToM3U($playlist);
-file_put_contents(__DIR__.'/play.m3u', $m3u);
+file_put_contents(__DIR__.'/playlist.m3u', $m3u);
 ```
 
-**Output file play.m3u:**
+**Output file playlist.m3u:**
 ```m3u
 #EXTM3U
 
