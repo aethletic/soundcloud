@@ -1,12 +1,12 @@
 {
-    "name": "aethletic/soundcloud",
+    "name": "chipslays/soundcloud",
     "description": "Soundcloud Api Library",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "aethletic",
-            "email": "hello@botify.ru"
+            "name": "chipslays",
+            "email": "hello@chipslays.ru"
         }
     ],
     "require": {},
