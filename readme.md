@@ -6,10 +6,10 @@ Mini library for work with Soundcloud API.
 
 With [Composer](https://getcomposer.org/):
 ```bash
-composer require aethletic/soundcloud
+composer require chipslays/soundcloud
 ```
 
-You can also [download latest release](https://github.com/aethletic/soundcloud/releases) without Composer and include like:
+You can also [download latest release](https://github.com/chipslays/soundcloud/releases) without Composer and include like:
 ```php 
 require __DIR__ . '/soundcloud/src/Api.php';
 ```
